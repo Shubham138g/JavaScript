@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <p id="para">how are you</p>
+
+    <button id="getdata" >EEEEEEEEEEEEEEnter</button>
     <script>
-        const a=document.getElementById("para");
+        const a = document.getElementById("para");
         alert(a.textContent)
+        const buttons = document.getElementById("getdata")
+
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function () {
+                var clickedButton = this.id;
+                para.textContent = "Clicked Button: " + clickedButton;
+            });
+        }
 
     </script>
 </body>
+
 </html>
