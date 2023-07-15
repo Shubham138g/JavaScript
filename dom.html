@@ -8,18 +8,18 @@
 </head>
 
 <body>
-    <p id="para">how are you</p>
-
-    <button id="getdata" >EEEEEEEEEEEEEEnter</button>
+        <button id="button1" class="myButton">Button 1</button>
+    <button id="button2" class="myButton">Button 2</button>
+    <p id="result"></p>
     <script>
-        const a = document.getElementById("para");
-        alert(a.textContent)
-        const buttons = document.getElementById("getdata")
+        
+        var resultElement = document.getElementById("result");
+        var buttons = document.getElementsByClassName("myButton");
 
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener("click", function () {
                 var clickedButton = this.id;
-                para.textContent = "Clicked Button: " + clickedButton;
+                resultElement.textContent = "Clicked Button: " + clickedButton;
             });
         }
 
