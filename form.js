@@ -5,3 +5,6 @@ function displaydata(){
     document.write(text1.value,"<br>")
     document.write(text2.value)
 }
+
+let text=document.querySelector("h2")
+console.log(text)
