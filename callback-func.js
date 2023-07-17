@@ -32,20 +32,22 @@
 
 
 
-function obj(callback) {
-    setTimeout(() => {
-        const obj = {
-            name: "shubham",
-            class: "bca"
-        }
-        callback(obj)
-    }, 3000);
-}
+// function obj(callback) {
+//     setTimeout(() => {
+//         const obj = {
+//             name: "shubham",
+//             class: "bca"
+//         }
+//         callback(obj)
+//     }, 3000);
+// }
 
-function display(obj) {
-    console.log("Data recieved", obj)
-}
+// function display(obj) {
+//     console.log("Data recieved", obj)
+// }
 
-obj(display);
+// obj(display);
 
-console.log("data aa rha hai...")
+// console.log("data aa rha hai...")
+
+// -------------------------------------------------------
