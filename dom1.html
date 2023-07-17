@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Example</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Hello, DOM!</h1>
+        <ul id="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </div>
+
+    <button id="addButton">Add Item</button>
+    <button id="changeButton">Change Text</button>
+
+    <script>
+        // Get references to the elements in the DOM
+        const container = document.getElementById("container");
+        const list = document.getElementById("list");
+        const addButton = document.getElementById("addButton");
+        const changeButton = document.getElementById("changeButton");
+
+        // Event listener for the "Add Item" button
+        addButton.addEventListener("click", function () {
+            const newItem = document.createElement("li");
+            newItem.textContent = "New Item";
+            list.appendChild(newItem);
+        });
+
+        // Event listener for the "Change Text" button
+        changeButton.addEventListener("click", function () {
+            container.querySelector("h1").textContent = "Hello, DOM is Awesome!";
+        });
+    </script>
+</body>
+
+</html>
