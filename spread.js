@@ -40,7 +40,8 @@ const obj = {
 const newobj = {
     ...obj,
     class1: "B-Tech",
-    hobbies: [...obj.hobbies]
+    //to update the index number 2 of hobbies in obj with "swim" then copy the obj.hobbies object and then update the value of array
+    hobbies: [...obj.hobbies] 
 }
 
 newobj.hobbies[2] = "swim"
