@@ -31,19 +31,29 @@
 
 //spread operator
 
-const obj = {
-    name: "shubham",
-    class1: "BCA",
-    hobbies: ["watching movies", "singing", "cycling"]
-}
+// const obj = {
+//     name: "shubham",
+//     class1: "BCA",
+//     hobbies: ["watching movies", "singing", "cycling"]
+// }
 
-const newobj = {
-    ...obj,
-    class1: "B-Tech",
-    //to update the index number 2 of hobbies in obj with "swim" then copy the obj.hobbies object and then update the value of array
-    hobbies: [...obj.hobbies] 
-}
+// const newobj = {
+//     ...obj,
+//     class1: "B-Tech",
+//     //to update the index number 2 of hobbies in obj with "swim" then copy the obj.hobbies object and then update the value of array
+//     hobbies: [...obj.hobbies] 
+// }
 
-newobj.hobbies[2] = "swim"
+// newobj.hobbies[2] = "swim"
 
-console.log(newobj)
+// console.log(newobj)
+
+// ------------------------------------------------------
+
+//rest operator
+
+// const emp_name=["sk","mc","kks","vg","sg"];
+
+// const {...rest}=emp_name
+
+// console.log(emp_name[3],rest)
