@@ -41,4 +41,4 @@ function outerFunction() {
   
   const closureFunction = outerFunction(); // closureFunction now holds innerFunction with its closure
   
-  closureFunction(); // Outpu
+  closureFunction();
