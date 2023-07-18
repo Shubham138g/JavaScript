@@ -5,10 +5,24 @@
 
 
 //rest operator
-const student ={
-    name:"shubham",
-    class1:"BCA",
-    hobbies:["watching movies","singing","cycling"]
+
+// const student ={
+//     name:"shubham",
+//     class1:"BCA",
+//     hobbies:["watching movies","singing","cycling"]
+// }
+// const {class1,...rest} =student;//rest operator combine the the rest element
+// console.log(rest)
+
+// ----------------------------------------
+
+//spread operator
+
+const arr=["shubham","mohan","kundan","raju","vikram"]
+const newarr={
+    ...arr, //spread operator <------here we copy the arr array and then update the array index[2] with shubham gupta from kundan
+    2:"shubham Gupta"
 }
-const {class1,...rest} =student;//rest operator combine the the rest element
-console.log(rest)
+
+
+console.log(newarr)
