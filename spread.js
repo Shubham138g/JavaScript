@@ -3,3 +3,12 @@
 // console.log(arrcp)
 
 
+
+//rest operator
+const student ={
+    name:"shubham",
+    class1:"BCA",
+    hobbies:["watching movies","singing","cycling"]
+}
+const {class1,...rest} =student;//rest operator combine the the rest element
+console.log(rest)
