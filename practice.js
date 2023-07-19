@@ -15,17 +15,31 @@
 
 //spread operator
 
-const emp = [
-    "shubham",
-    "mohan",
-    "kundan kumar sahu",
-    "vikram Gupta",
-    "priyanka Thapa",
-    "Komal verma"
-];
+// const emp = [
+//     "shubham",
+//     "mohan",
+//     "kundan kumar sahu",
+//     "vikram Gupta",
+//     "priyanka Thapa",
+//     "Komal verma"
+// ];
 
-console.log(emp)
+// console.log(emp)
 
-const  copyemp={...emp,2:"kundan meri jaan"};
-const {...rest}=emp; //rest operator 
-console.log(copyemp[5],rest)
+// const  copyemp={...emp,2:"kundan meri jaan"};
+// const {...rest}=emp; //rest operator 
+// console.log(copyemp[5],rest)
+
+//callback function practice
+function arr(callback) {
+    setTimeout(() => {
+        const arr1 = ["shubham", "mohan", "kundan"]
+        callback(arr1)
+    }, 2000);
+}
+
+function dis(arr1) {
+    console.log(arr1)
+}
+
+arr(dis)
