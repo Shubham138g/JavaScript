@@ -31,15 +31,15 @@
 // console.log(copyemp[5],rest)
 
 //callback function practice
-function arr(callback) {
-    setTimeout(() => {
-        const arr1 = ["shubham", "mohan", "kundan"]
-        callback(arr1)
-    }, 2000);
-}
+// function arr(callback) {
+//     setTimeout(() => {
+//         const arr1 = ["shubham", "mohan", "kundan"]
+//         callback(arr1.sort())
+//     }, 2000);
+// }
 
-function dis(arr1) {
-    console.log(arr1)
-}
+// function dis(arr1) {
+//     console.log(arr1)
+// }
 
-arr(dis)
+// arr(dis)
