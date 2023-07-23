@@ -57,3 +57,12 @@
 // const {...rest}=emp_name
 
 // console.log(emp_name[3],rest)
+
+//spread operator
+const emp=["shubham","ss","km"];
+
+const newarr= {
+    ...emp,
+    2:"sm"
+}
+console.log(newarr);
