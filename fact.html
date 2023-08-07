@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorail</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="name" placeholder="factorail">
+        <button type="submit" id="button1">Find</button>
+    </form>
+    <script>
+        const textElement = document.getElementById("name")
+        const buttonElement = document.getElementById("button1")
+    
+        buttonElement.addEventListener("click", function xyz() {
+            const textValue = textElement.value;
+            if (textValue == 0) {
+                return 1;
+            }
+            else {
+                let fact = 1;
+                for (let i = 1; i <= textValue; i++) {
+                    fact *= i;
+                }
+                document.write(` the factorial of ${textValue} is ${fact}`);
+            }
+        })
+        xyz();
+    </script>
+</body>
+
+</html>
+
