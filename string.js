@@ -13,3 +13,9 @@ let arr1=[1,3,4];
 // console.log(5+"5");
 // console.log(5*"5");
 // console.log(5%"5");
+
+// console.log(arr1.pop()); //[1,3]
+// console.log(arr1.shift()); //[4]
+// console.log(arr1.shift()); //[]
+
+
