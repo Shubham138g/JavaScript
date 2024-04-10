@@ -26,5 +26,9 @@ let arr1=[1,2,3,4];
 // console.log(arr1.join("_"));
 // console.log(arr1.toString());
 // console.log(arr1.slice(1,3));
-console.log(arr1.splice(1,2,"5","6"))
-console.log(arr1);
+// console.log(arr1.splice(1,2,"5","6"))
+// console.log(arr1);
+
+// let arr1=[1,2,3,4];
+var arr3=arr1.splice(0,3);
+console.log(arr3);
