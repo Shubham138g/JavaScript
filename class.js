@@ -9,15 +9,13 @@ class Abc{
         for(let element of sumElement){
             num+=element;
         }
-        // return num;
         console.log(num);
+        return num;
     }
-    // minus(){
 
-    // }
 }
 
 let table= new Abc();
 
 table.table(3);
-table.sum(3,5);
+table.sum(3,5,4,5,6,6,56,56);
