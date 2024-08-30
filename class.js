@@ -15,6 +15,8 @@ class Abc{
 
 }
 
+
+
 let table= new Abc();
 
 table.table(3);
