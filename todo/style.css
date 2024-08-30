@@ -1,0 +1,37 @@
+/* *{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(76, 24, 24);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header h1{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+main{
+    width: 40%;
+    height: auto;
+    background-color: aqua;    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+button{
+    color: black;
+} */
