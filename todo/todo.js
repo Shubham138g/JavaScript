@@ -1,11 +1,28 @@
+const taskList = document.getElementById("taskList");
 
-const addtask=()=>{
+function addTask() {
     const inputElement = document.getElementById("input");
     const taskValue = inputElement.value;
-    console.log(taskValue);
-    
-          // Create a new list item for the task
-          const taskItem = document.createElement("li");
-          taskItem.textContent = taskValue;
-  
+
+    if (taskValue.trim() !== "") {
+        const taskList = document.getElementById("taskList");
+
+        const taskItem = document.createElement("li");
+        const taskText = document.createElement("span");
+        taskText.textContent = taskValue;
+
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.classList.add("delBtn");
+        deleteButton.onclick = () => taskItem.remove();
+
+        taskItem.appendChild(taskText);
+        taskItem.appendChild(deleteButton);
+        // taskList.appendChild(taskItem);
+        taskList.insertBefore(taskItem, taskList.firstChild);
+
+        inputElement.value = ""; // Clear the input field
+    } else {
+        alert("Please enter a task.");
+    }
 }
