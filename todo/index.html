@@ -31,6 +31,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,6 +45,7 @@
             height: 100vh;
             background-color: #f4f4f4;
         }
+
         .container {
             background-color: white;
             padding: 20px;
@@ -51,13 +53,15 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             width: 300px;
         }
+
         input[type="text"] {
-            width: calc(100% - 24px);
+            width: 100%;
             padding: 10px;
             border-radius: 4px;
             border: 1px solid #ccc;
             margin-bottom: 10px;
         }
+
         button {
             width: 100%;
             padding: 10px;
@@ -67,13 +71,16 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
         button:hover {
             background-color: #218838;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         li {
             padding: 10px;
             background-color: #f8f9fa;
@@ -82,20 +89,36 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            /* Allows text to wrap if it's too long */
         }
-        li button {
+
+        li span {
+            flex-grow: 1;
+            word-wrap: break-word;
+            margin-right: 10px;
+            max-width: 190px;
+            /* Limit the width of the text */
+        }
+
+        .delBtn {
+            width: 80px;
             background-color: #dc3545;
             border: none;
             color: white;
             padding: 5px 10px;
             border-radius: 4px;
             cursor: pointer;
+            flex-shrink: 0;
+            /* Prevent button from shrinking */
         }
-        li button:hover {
+
+        .delBtn:hover {
             background-color: #c82333;
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -106,6 +129,8 @@
     </div>
 
     <script>
+        const taskList = document.getElementById("taskList");
+
         function addTask() {
             const inputElement = document.getElementById("input");
             const taskValue = inputElement.value;
@@ -114,12 +139,15 @@
                 const taskList = document.getElementById("taskList");
 
                 const taskItem = document.createElement("li");
-                taskItem.textContent = taskValue;
+                const taskText = document.createElement("span");
+                taskText.textContent = taskValue;
 
                 const deleteButton = document.createElement("button");
                 deleteButton.textContent = "Delete";
+                deleteButton.classList.add("delBtn");
                 deleteButton.onclick = () => taskItem.remove();
 
+                taskItem.appendChild(taskText);
                 taskItem.appendChild(deleteButton);
                 taskList.appendChild(taskItem);
 
@@ -128,7 +156,9 @@
                 alert("Please enter a task.");
             }
         }
+
     </script>
 
 </body>
+
 </html>
