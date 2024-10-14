@@ -7,5 +7,5 @@ function deleteElement(position){
     }
     number.length = number.length - 1;
 }
-deleteElement(1)
+deleteElement(5)
 console.log(number);
